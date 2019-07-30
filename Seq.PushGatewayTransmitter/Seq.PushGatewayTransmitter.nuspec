@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Seq.PushGatewayTransmitter</id>
+    <version>1.0.11</version>
+    <title>Seq.PushGatewayTransmitter</title>
+    <authors>Domma</authors>
+    <owners>Domma</owners>
+    <licenseUrl>https://github.com/amitxagarwal/Seq.PushGatewayTransmitter/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/amitxagarwal/Seq.PushGatewayTransmitter/blob/master</projectUrl>
+    <iconUrl>https://github.com/amitxagarwal/Seq.PushGatewayTransmitter/blob/master/icon</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Seq.PushGatewayTransmitter</description>
+    <releaseNotes>Pushing it for the first timw</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>DommaSeq.PushGatewayTransmitter </tags>
+  </metadata>
+  <files>
+<file src="bin\Debug\Prometheus.Client.MetricPusher.dll" target="lib\net45" />
+<file src="bin\Debug\Prometheus.Client.dll" target="lib\net45" />
+</files>
+</package>
