@@ -12,12 +12,12 @@ using System.Threading.Tasks;
 namespace PushgatewayTransmitter
 {
     [SeqApp("Seq.PushgatewayReactor",
-        Description = "Uses a Handlebars template to send events to Pushgateway.")]
+        Description = "Filtered events are sent to the Pushgateway.")]
     public class PushgatewayReactor : Reactor, ISubscribeTo<LogEventData>
     {
         //private readonly object pushGatewayNotification;
 
-        [SeqAppSetting(
+        [SeqAppSetting(InputType = SettingInputType.Text,
             DisplayName = "Pushgateway URL",
             HelpText = "The URL of the Pushgateway")]
         public static string PushgatewayUrl { get; set; }
