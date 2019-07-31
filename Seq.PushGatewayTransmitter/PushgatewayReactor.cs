@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace PushgatewayTransmitter
 {
-    [SeqApp("Seq.PushgatewayReactor",
+    [SeqApp("Seq.PushgatewayTransmitter",
         Description = "Filtered events are sent to the Pushgateway.")]
     public class PushgatewayReactor : Reactor, ISubscribeTo<LogEventData>
     {
