@@ -18,19 +18,9 @@ namespace PushgatewayTransmitter
         //private readonly object pushGatewayNotification;
 
         [SeqAppSetting(
-        DisplayName = "From address",
-        HelpText = "The account from which the email is being sent.")]
-        public string From { get; set; }
-
-        [SeqAppSetting(
-            DisplayName = "To address",
-            HelpText = "The account to which the email is being sent. Multiple addresses are separated by a comma. Handlebars syntax is supported.")]
-        public string To { get; set; }
-
-        [SeqAppSetting(
             DisplayName = "Pushgateway URL",
             HelpText = "The URL of the Pushgateway")]
-        public static string PushgatewayUrl { get; set; }
+        public string PushgatewayUrl { get; set; }
 
         public void On(Event<LogEventData> evt)
         {
